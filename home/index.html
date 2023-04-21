@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css//normalize.css">
+    <link rel="stylesheet" href="./css//index.css">
+    <title>Lista de contactos</title>
+</head>
+<body>
+    <section class="container">
+        <!-- CONTACT -->
+        <div class="contact-container">
+            <!-- FORM -->
+            <div class="contact-form">
+                <form id="form">
+                    <div class="input-container">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name-input" placeholder="example: Juan" autocomplete="off">
+                    </div>
+                    <div class="input-container">
+                        <label for="name">Nro teléfonico:</label>
+                        <div class="number-container">
+                            <select id="number-select" name="number-select" id="">
+                                <option value="">Seleccione su código</option>
+                                <option value="0416">0416</option>
+                                <option value="0426">0426</option>
+                                <option value="0414">0414</option>
+                                <option value="0424">0424</option>
+                                <option value="0412">0412</option>
+                                <option value="0212">0212</option>
+                            </select>
+                            <input type="tel" id="number-input" placeholder="1234567" autocomplete="off">
+                        </div>
+                    </div>
+                    <button id="add-btn" type="submit">Agregar</button>
+                </form>
+            </div>
+            <!-- LIST -->
+            <div class="my-contacts">
+                <h2>Mis Contactos</h2>
+                <ul class="list-container">
+                    <!-- LIST-ITEM -->
+                    <!-- <li class="list">
+                        <div class="circle">
+                            <span>JB</span>
+                        </div>
+                        <input type="text" readonly value="Joan Blanco">
+                        <input type="tel" readonly value="04129545107">
+                        <div class="button-container">
+                        
+                            <button id="edit"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                                <path d="M13.5 6.5l4 4"></path>
+                             </svg></button>
+                 
+                            <button id="delete"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 7l16 0"></path>
+                                <path d="M10 11l0 6"></path>
+                                <path d="M14 11l0 6"></path>
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+                             </svg></button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
